@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for EPDP application */
+
+/* Phase cards styling */
+.phase-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.phase-card.active {
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+}
+
+/* Decision gate styling */
+.gate {
+  width: 40px;
+  height: 40px;
+  background-color: #fcd34d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gate:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gate-text {
+  font-size: 0.75rem;
+  color: #78350f;
+}
+
+/* Utilities accordion styling */
+.util-accordion summary {
+  list-style: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.util-accordion summary:before {
+  content: '►';
+  position: absolute;
+  left: 0;
+  transform: rotate(0);
+  transition: transform 0.2s ease;
+  color: #14b8a6;
+}
+
+.util-accordion[open] summary:before {
+  transform: rotate(90deg);
+}
+
+/* Animation for live process indicator */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.live-indicator {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #14b8a6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d9488;
+}
+
+/* Tab navigation */
+.tab-button {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Role highlighting */
+.role-highlight {
+  position: relative;
+}
+
+.role-highlight::after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #14b8a6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .phase-card {
+    margin-bottom: 1rem;
+  }
+}

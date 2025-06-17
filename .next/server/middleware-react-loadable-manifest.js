@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"..\\\\components\\\\tabs\\\\content\\\\ChartTab.js -> chart.js\":{\"id\":\"..\\\\components\\\\tabs\\\\content\\\\ChartTab.js -> chart.js\",\"files\":[\"static/chunks/node_modules_chart_js_dist_chart_js.js\"]}}"
