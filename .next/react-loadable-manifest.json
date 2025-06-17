@@ -1,8 +1,9 @@
 {
   "..\\components\\tabs\\content\\ChartTab.js -> chart.js": {
-    "id": "..\\components\\tabs\\content\\ChartTab.js -> chart.js",
+    "id": 3148,
     "files": [
-      "static/chunks/node_modules_chart_js_dist_chart_js.js"
+      "static/chunks/ee8b1517.4e4177837351452c.js",
+      "static/chunks/411.70e92ebe717b59c7.js"
     ]
   }
 }
